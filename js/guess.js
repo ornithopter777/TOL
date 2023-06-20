@@ -17,7 +17,7 @@ let arr = [
    '1001'
 ];
 
-window.addEventListener('click', function (event) {
+document.addEventListener('click', function (event) {
 
    if (event.target.dataset.item === 'itemm') {
       const itemblock = event.target.closest('.guess__item');
