@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>Guess</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="..//TOL/img/icons/diamond.png">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__container">
+         <div class="header__title">
+            <a href="index.html" class="header__title__logo">
+               <img class="header__logo" src="..//TOL/img/Logoheader/ton symbol.png" alt="">
+            </a>
+            <div class="header__title__text">The Open Lottery</div>
+         </div>
+         <div class="header__info">
+            <div class="header__info__text">EQAOi67IbSE6JQtKCrX4Hajk7bcQu9YzgBlr_G8XjJG906Ty</div>
+            <svg xmlns="http://www.w3.org/2000/svg" id="777" viewBox="0 0 14 14" class="ui-copy-button__icon" style=""><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M6.36 3.35h3.29a2 2 0 012 2v5.3a2 2 0 01-2 2H6.36a2 2 0 01-2-2v-5.3a2 2 0 012-2z"></path><path d="M2 10.65V3.3A2.3 2.3 0 014.3 1h5.4"></path></g></svg>
+         </div>
+      </div>
+   </header>
+
+      <div class="ticker"></div>
+      <div class="idcounter"><p></p></div>
+
+<div class="address__input">
+   <form action="#">
+      <input placeholder="input your TON wallet addres" type="text" class="adress__area">
+      <button type="submit" class="adress__btn">send</button>
+   </form>   
+</div>
+
+<div class="categories__wrapper">
+   <div class="titlerefwrap">
+      <div class="categories__title"> <span class="tap">Tap</span> <span class="and">and</span> <span class="choose">find</span> <span class="your">your</span> <span class="tickets">TON!</span></div>
+      <div class="getref">get <br> ref</div>
+   </div>
+
+   <div class="counterboxx" data-counterbox></div>
+
+   <div id="555" class="guess__items">
+      <div class="guess__item">
+         <img id="1" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1001" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="2" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1002" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="3" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1003" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="4" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1004" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div> 
+      <div class="guess__item">
+         <img id="5" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1005" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="6" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1006" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div> 
+            <div class="guess__item">
+         <img id="7" src="..//TOL/img/Categories/Particulars/Items/electron.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1007" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="8" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1008" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="9" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1009" class="guess__item__img2" data-item=""></div>
+      </div>
+
+
+
+      <div class="guess__item">
+         <img id="10" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1010" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="11" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1011" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="12" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1012" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="13" src="..//TOL/img/Categories/Particulars/Items/electron.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1013" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="14" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1014" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="15" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1015" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="16" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1016" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="17" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1017" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="18" src="..//TOL/img/Categories/Particulars/Items/electron.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1018" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="19" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1019" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="20" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1020" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="21" src="..//TOL/img/Categories/Particulars/Items/neutron.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1021" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="22" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1022" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="23" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1023" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="24" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1024" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="25" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1025" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="26" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1026" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="27" src="..//TOL/img/Categories/Particulars/Items/proton.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1027" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="28" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1028" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="29" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1029" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="30" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1030" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="31" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1031" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="32" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1032" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="33" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1033" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="34" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1034" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="35" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1035" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="36" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1036" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="37" src="..//TOL/img/Categories/Particulars/Items/neutron.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1037" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="38" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1038" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="39" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1039" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="40" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1040" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="41" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1041" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="42" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1042" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="43" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1043" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="44" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1044" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="45" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1045" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="46" src="..//TOL/img/Categories/Particulars/Items/proton.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1046" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="47" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1047" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="48" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1048" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="49" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1049" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="50" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1050" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="51" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1051" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="52" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1052" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="53" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1053" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="54" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1054" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="55" src="..//TOL/img/Categories/Particulars/Items/electron.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1055" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="56" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1056" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="57" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1057" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="58" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1058" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="59" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1059" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="60" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1060" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="61" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1061" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="62" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1062" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="63" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1063" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="64" src="..//TOL/img/Categories/Particulars/Items/proton.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1064" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="65" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1065" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="66" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1066" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="67" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1067" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="68" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1068" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="69" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1069" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="70" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1070" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="71" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1071" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="72" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1072" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="73" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1073" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="74" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1074" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="75" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1075" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="76" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1076" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="77" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1077"  class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="78" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1078" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="79" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1079" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="80" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1080" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="81" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1081" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+
+      <div class="guess__item">
+         <img id="82" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1082" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="83" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1083" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="84" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1084" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="85" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1085" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="86" src="..//TOL/img/Categories/Particulars/Items/proton.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1086" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="87" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1087" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="88" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1088" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="89" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1089" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="90" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1090" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="91" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1091" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="92" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1092" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="93" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1093" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="94" src="..//TOL/img/Categories/Particulars/Items/proton.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1094" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="95" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1095" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="96" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1096" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="97" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1097" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="98" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1098" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="99" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1099" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="100" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1100" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="101" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1101" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="102" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1102" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="103" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1103" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="104" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1104" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="105" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1105" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+         <div class="guess__item">
+         <img id="106" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1106" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+            <img id="107" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+            <div id="1107" src="" alt="" class="guess__item__img2" data-item=""></div>
+            <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="108" src="..//TOL/img/Categories/Particulars/Items/electron.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1108" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="109" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1109" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="110" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1110" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="111" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1111" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="112" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1112" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="113" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1113" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="114" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1114" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="115" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1115" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="116" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1116" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="117" src="..//TOL/img/Categories/Particulars/Items/proton.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1117" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="118" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1118" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="119" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1119" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="120" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1120" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="121" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1121" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="122" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1122" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="123" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1123" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="124" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1124" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="125" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1125" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="126" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1126" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="127" src="..//TOL/img/Categories/Particulars/Items/electron.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1127" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="128" src="..//TOL/img/Categories/Particulars/Items/neutron.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1128" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="129" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1129" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="130" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1130" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="131" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1131" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="132" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1132" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="133" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1133" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="134" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1134" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="135" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1135" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="136" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1136" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="137" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1137" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="138" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1138" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="139" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1139" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="140" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1140" src="" alt="" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="141" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1141" src="" alt="" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="142" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1142" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="143" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1143" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="144" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1144" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="145" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1145"class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="146" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1146" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="147" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1147" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="148" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1148" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="149" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1149" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="150" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1150" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="151" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1151" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+            <div class="guess__item">
+         <img id="152" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1152" class="guess__item__img2" data-item=""></div>
+      </div>
+      <div class="guess__item">
+         <img id="153" src="..//TOL/img/Categories/Minerals/Items/Agat2.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1153" class="guess__item__img2" data-item=""></div>
+         <div class="//itemchecked"></div>
+      </div>
+      <div class="guess__item">
+         <img id="154" src="..//TOL/img/Categories/Minerals/Items/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg" alt="" class="guess__item__img" data-item="itemm">
+         <div id="1154" class="guess__item__img2" data-item=""></div>
+      </div>
+
+      <div class="ref__container">
+         <form action="#">
+            <input placeholder="input your TON wallet addres to get ref" type="text" class="refadress__area">
+            <button type="submit" class="ref__btn">send</button>
+         </form>  
+         <div class="boofer"></div>
+      </div>
+   
+      <script src="..//TOL/js/guess.js"></script>
+
+</div>
+</div>
+</body>
+</html>
