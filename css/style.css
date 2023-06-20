@@ -396,6 +396,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-grid-rows: 100%;
   grid-template-rows: 100%;
   position: relative;
+  cursor: pointer;
 }
 .categories__items .item__img {
   display: block;
@@ -405,6 +406,7 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 3px 3px 3px #acafb3;
   border-radius: 5px;
   position: relative;
+  cursor: pointer;
 }
 .categories__items .item__img:active {
   top: 1px;
