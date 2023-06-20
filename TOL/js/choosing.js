@@ -79,7 +79,7 @@ walletclose.addEventListener('click', function () {
    walletcopy.style.cssText = 'display: none;';
 });
 
-window.addEventListener('click', function (event) {
+document.addEventListener('click', function (event) {
    if (event.target.dataset.box === 'item') {
       const itemwrap = event.target.closest('.categories__item');
       let itemtarget = itemwrap.querySelector('.item__img');
