@@ -7,6 +7,7 @@
    <title>Guess</title>
    <link rel="stylesheet" href="css/style.css">
    <link rel="icon" href="..//TOL/img/icons/diamond.png">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -35,8 +36,8 @@
       <div class="idcounter"><p></p></div>
 
 <div class="address__input">
-   <form action="#">
-      <input placeholder="input your TON wallet addres" type="text" class="adress__area">
+   <form id="fgw" class="g-form" method="POST" action="#">
+      <input name="guesswallet" placeholder="input your TON wallet addres" type="text" class="adress__area">
       <button type="submit" class="adress__btn">send</button>
    </form>   
 </div>
