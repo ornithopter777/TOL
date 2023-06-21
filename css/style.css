@@ -112,7 +112,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: 1px;
   color: #232328;
-  padding: 12px 0 15px 5px;
+  padding: 12px 0 0px 5px;
+  max-height: 35px;
+}
+.header__container .lotlinkcont {
+  margin: 0 0 10px 42px;
+}
+.header__container .lotlinkcont .lotlinkcont__link {
+  font-family: "Inter";
+  color: #46b1f0;
+  font-size: 12px;
 }
 .header__container .header__info {
   min-width: 0;
@@ -211,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
       grid-template: minmax(160px, 1fr)/repeat(2, minmax(120px, 1fr));
 }
 .categories .category {
-  border-right: 2px dashed black;
+  border-right: 2px dashed #acafb3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
