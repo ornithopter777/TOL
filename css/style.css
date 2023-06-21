@@ -666,14 +666,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 20px;
   color: #282327;
+  border: 1px solid #F7F9FB;
   border-radius: 5px;
-  width: 280px;
-  height: 65px;
+  width: 300px;
+  height: 55px;
   background: #F7F9FB;
   opacity: 100%;
   position: absolute;
   top: 73px;
-  left: -15%;
+  left: -23%;
   margin: 0 0 0 0;
   padding: 2px 0 0 0;
 }
@@ -681,14 +682,20 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 280px;
+  width: 300px;
 }
 .counter__wrapper .PAY .dropdown .wallet__copy .wallet__titlecont .wallet__title {
-  max-width: 260px;
+  max-width: 290px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  margin: 3px 0 0 3px;
+  margin: 0 0 0 3px;
+}
+.counter__wrapper .PAY .dropdown .wallet__copy .wallet__titlecont .wallet__title .wallet__copybtn {
+  display: inline-block;
+  min-width: 120px;
+  max-width: 130px;
+  color: #46b1f0;
 }
 .counter__wrapper .PAY .dropdown .wallet__copy .wallet__titlecont .wallet__title .linkw {
   display: inline;
@@ -703,12 +710,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  background: url(..//img/icons/closeicon1.png) -3px 1px/cover no-repeat;
-}
-.counter__wrapper .PAY .dropdown .wallet__copy .wallet__copybtn {
-  width: 200px;
-  color: #46b1f0;
-  padding: 0 0 0 63px;
+  background: url(..//img/icons/closeicon1.png) -4px 1px/cover no-repeat;
 }
 
 .idcounter {
