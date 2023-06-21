@@ -90,7 +90,7 @@ document.addEventListener('click', function (event) {
          itemtarget.after(icon);
          icon.style.display = 'block';
          itemcount.innerText = coun.length;
-         TONcount.innerText = Math.floor(coun.length * itemprice);
+         TONcount.innerText = Math.round((coun.length * itemprice)*10)/10;
          if (coun.length == 0) {
             itemcount.innerText = null;
             TONcount.innerText = null;
@@ -105,7 +105,7 @@ document.addEventListener('click', function (event) {
          const parent = h1.parentNode;
          parent.removeChild(h1);
          itemcount.innerText = coun.length;
-         TONcount.innerText = Math.floor(coun.length * itemprice);
+         TONcount.innerText = Math.round((coun.length * itemprice)*10)/10;
          if (coun.length == 0) {
             itemcount.innerText = null;
             TONcount.innerText = null;
