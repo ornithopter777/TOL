@@ -38,7 +38,7 @@ document.addEventListener('click', function (event) {
          return Math.floor(Math.random() * (max - min)) + min; 
       };
 
-      let a = getRandomInt(1001, 1002);
+      let a = getRandomInt(1001, 1154);
       arr.push(`${a}`);
 
       let guessitem = document.getElementById(`${a}`);
