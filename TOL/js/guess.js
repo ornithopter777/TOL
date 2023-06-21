@@ -70,14 +70,19 @@ refopen.addEventListener('click', function () {
 let area = document.querySelector('.refadress__area')
 let boofer = document.querySelector('.boofer');
 let refbtn = document.querySelector('.ref__btn');
-let refarr = [];
+let refarr = [
+   'Hi! ',
+   'You can get free TON ',
+   'here: https://t.me/Try2webappbot/Trytrytry ',
+   "Don't forget my ref: ",
+];
 
 refbtn.addEventListener('click', function () {
    
    refarr.unshift(`${area.value}`);
    area.value = null;
    let a = refarr[0];
-   boofer.innerText = (`${a.slice(0, 3)}` + `${a.slice(-4, -1)}`);
+   boofer.innerText = (`${refarr[1]}`+`${refarr[2]}`+`${refarr[3]}`+`${refarr[4]}`+`${a.slice(0, 3)}` + `${a.slice(-4, -1)}`);
 
    let copyref = [boofer].map(el => el.textContent).join('\n');
    if (copyref) {
