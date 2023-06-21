@@ -100,7 +100,7 @@ document.addEventListener('touchmove', function (event) {
 var lastTouchEnd = 0;
 document.addEventListener('touchend', function (event) {
    var now = (new Date()).getTime();
-   if (now - lastTouchEnd <= 100) {
+   if (now - lastTouchEnd <= 40) {
    event.preventDefault();
    }
    lastTouchEnd = now;
