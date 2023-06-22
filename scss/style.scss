@@ -13,6 +13,10 @@
    color: $c;
 }
 
+body {
+   //background: #F7F9FB;
+}
+
 
 .header {
    height: 80px;
@@ -181,8 +185,13 @@
          flex: 1 1 auto;
          margin: 2px 0 2px 0;
          line-height: 15px;
+         & b {
+            color: #232328;
+            font-weight: 600;
+         }
          & span {
             color: red;
+            font-weight: 600
          }
       }
       .category__link {

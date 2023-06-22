@@ -247,8 +247,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2px 0 2px 0;
   line-height: 15px;
 }
+.categories .category .category__about b {
+  color: #232328;
+  font-weight: 600;
+}
 .categories .category .category__about span {
   color: red;
+  font-weight: 600;
 }
 .categories .category .category__link {
   display: inline-block;
