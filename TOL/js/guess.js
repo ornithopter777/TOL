@@ -73,7 +73,7 @@ let refbtn = document.querySelector('.ref__btn');
 let refarr = [
    'Hi! ',
    'You can get free TON ',
-   'here: https://t.me/Try2webappbot/Trytrytry ',
+   'here: https://t.me/TheOpenLottery_bot/TheOpLot ',
    "Don't forget my ref: ",
 ];
 
