@@ -228,6 +228,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 0 5px 0;
 }
 .categories .category .category__img {
   max-width: 100%;
@@ -726,9 +727,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .address__input {
   display: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   border-radius: 3px;
   margin: 40% auto;
   position: absolute;
@@ -743,6 +741,7 @@ h1, h2, h3, h4, h5, h6 {
           flex: 0 1 auto;
   border: 1px solid #acafb3;
   height: 20px;
+  margin: 3px 0 0 5%;
 }
 .address__input .adress__btn {
   display: inline-block;
@@ -753,6 +752,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #282327;
   height: 20px;
   border-radius: 3px;
+}
+.address__input .ref__area {
+  max-width: 165px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  border: 1px solid #acafb3;
+  height: 20px;
+  color: red;
+  margin: 5px 25%;
 }
 
 .guess__items {
@@ -828,4 +837,67 @@ h1, h2, h3, h4, h5, h6 {
 }
 .ref__container .boofer {
   display: none;
+}
+
+.rules__contentwrapper {
+  background: #F7F9FB;
+}
+.rules__contentwrapper .rules__wrapper .rules__title {
+  font-family: "Inter";
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #232328;
+  margin: 0 0 10px 0;
+}
+.rules__contentwrapper .rules__wrapper .rules__content {
+  font-family: "Inter";
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+  color: #232328;
+  margin: 0 0 8px 0;
+  padding: 0 0 8px 0;
+  border-bottom: 1px dashed #acafb3;
+}
+.rules__contentwrapper .rules__wrapper .progress {
+  color: red;
+  font-weight: 500;
+}
+.rules__contentwrapper .rules__wrapper ul li:nth-child(1) {
+  padding: 5px 0 0 5px;
+}
+.rules__contentwrapper .rules__wrapper ul li:nth-child(1)::before {
+  content: "";
+  background: url(..//img/icons/diamond.png) 0 2px/15px no-repeat;
+  padding: 0 0 0 20px;
+}
+.rules__contentwrapper .rules__wrapper ul li:nth-child(2) {
+  padding: 5px 0 0 5px;
+}
+.rules__contentwrapper .rules__wrapper ul li:nth-child(2)::before {
+  content: "";
+  background: url(..//img/icons/diamond.png) 0 2px/15px no-repeat, url(..//img/icons/diamond.png) 17px 2px/15px no-repeat;
+  padding: 0 0 0 40px;
+}
+.rules__contentwrapper .rules__wrapper ul li:nth-child(3) {
+  padding: 5px 0 0 5px;
+}
+.rules__contentwrapper .rules__wrapper ul li:nth-child(3)::before {
+  content: "";
+  background: url(..//img/icons/diamond.png) 0 2px/15px no-repeat, url(..//img/icons/diamond.png) 17px 2px/15px no-repeat, url(..//img/icons/diamond.png) 34px 2px/15px no-repeat;
+  padding: 0 0 0 55px;
+}
+.rules__contentwrapper .rules__wrapper a {
+  font-family: "Inter";
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+  color: #46b1f0;
+  text-decoration: underline;
+}
+.rules__contentwrapper .rules__wrapper img {
+  width: 20px;
+  height: 20px;
 }
