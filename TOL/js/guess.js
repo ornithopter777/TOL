@@ -50,7 +50,7 @@ document.addEventListener('click', function (event) {
 
       guessitem.addEventListener('click', function () {
       let addinput = document.querySelector('.address__input');
-         addinput.style.cssText = 'display: flex;';
+         addinput.style.cssText = 'display: block;';
          let addclose = document.querySelector('.adress__btn');
          addclose.addEventListener('click', function () {
          addinput.style.cssText = 'display: none;';
@@ -100,7 +100,7 @@ document.addEventListener('touchmove', function (event) {
 var lastTouchEnd = 0;
 document.addEventListener('touchend', function (event) {
    var now = (new Date()).getTime();
-   if (now - lastTouchEnd <= 40) {
+   if (now - lastTouchEnd <= 10) {
    event.preventDefault();
    }
    lastTouchEnd = now;
@@ -117,9 +117,6 @@ $(function() {
      // Id текущей формы
       let form = $('#' + $(this).attr('id'))[0];
       
-     // Блок прелоадера
-      let preloader = $(this).find('.g-form__preloader');
-      
      // Кнопка отправки формы
       let submitButton = $(this).find('.adress__btn');
       
@@ -131,47 +128,6 @@ $(function() {
       data: fd,
       processData: false,
       contentType: false,
-      beforeSend: function(){
-       // Показываем прелоадер
-      preloader.css('opacity', '1');
-   },
-   }).done(function(res, textStatus, jqXHR) {
-   if(jqXHR.readyState === 4 && jqXHR.status === 200) {
-     // Прячем прелоадер
-   preloader.css('opacity', '0');
-   } else {
-      formTitle.css({
-         'display': 'none'
-      });
-      formRespond.html(errorRespond).css('color', '#c64b4b');
-      preloader.css('opacity', '0');
-      setTimeout( () => {
-         formRespond.css({
-         'display': 'none'
-         });
-         formTitle.css({
-         'display': 'block'
-         });
-         submitButton.prop('disabled', false);
-      }, 5000);
-      console.log('Гугл не ответил статусом 200');
-   }
-   }).fail(function(res, textStatus, jqXHR) {
-   formTitle.css({
-      'display': 'none'
-   });
-   preloader.css('opacity', '0');
-   formRespond.html('Не удалось отправить сообщение. Cвяжитесь с администратором сайта другим способом').css('color', '#c64b4b');
-   setTimeout( () => {
-      formRespond.css({
-         'display': 'none'
-      });
-      formTitle.css({
-         'display': 'block'
-      });
-      submitButton.prop('disabled', false); 
-   }, 5000);
-   console.log('Не удалось выполнить запрос по указанному в скрипте пути');
-   }); 
+   })
 });
 }(jQuery));
