@@ -429,6 +429,18 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 1px 1px 1px #acafb3;
           box-shadow: 1px 1px 1px #acafb3;
 }
+.categories__items .sold {
+  opacity: 40%;
+}
+.categories__items .sold__item {
+  background: url(..//img/icons/sold1.png) 0 0/cover no-repeat;
+  position: absolute;
+  right: 20px;
+  width: 100px;
+  height: 55px;
+  display: block;
+  opacity: 60%;
+}
 .categories__items .itemchecked {
   border-radius: 5px;
   position: absolute;

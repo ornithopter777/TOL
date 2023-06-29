@@ -86,6 +86,9 @@ document.addEventListener('click', function (event) {
       let icon = document.createElement(`div`);
       let itemid = itemtarget.id;
       if (itemwrap.querySelector('.itemchecked') === null) {
+         if (itemid === '4') {
+            return;
+         }
          icon.classList.add('itemchecked');
          itemtarget.after(icon);
          icon.style.display = 'block';
