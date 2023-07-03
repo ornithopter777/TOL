@@ -14,11 +14,6 @@ document.addEventListener('touchend', function (event) {
    lastTouchEnd = now;
 }, false);
 
-const titletext = document.querySelector('.categories__title');
-const titletextcontent = titletext.innerHTML;
-titletext.innerHTML = 'FAST!';
-titletext.innerHTML = `${titletextcontent} <span class="your">FAST</span>!`;
-
 let addresscop = document.querySelector('.ui-copy-button__icon');
 addresscop.addEventListener('click', () => {
    let copyData = [document.querySelector('.header__info__text')].map(el => el.textContent).join('\n');
